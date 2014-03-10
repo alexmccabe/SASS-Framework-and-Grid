@@ -58,7 +58,7 @@ Many typography defaults have been set in the `_typography` partial. These chang
 If you have a sidebar and require a `h2`, but the styles set for this make it too large, you can apply any other heading class. For example: `<h2 class="h4">...</h2>`
 
 ####The Typography Class
-For pages that will have many of the above mentioned tags, apply the `.tyopgrahpy` class to the container parent and all child elements will inherit the correct classes.
+For pages that will have many of the above mentioned tags, apply the `.typograhpy` class to the container parent and all child elements will inherit the correct classes.
 
 ##Utilities and Functions
 - Get the first item from a list
