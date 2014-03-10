@@ -1,0 +1,33 @@
+*, *:before, *:after { @extend %box-sizing; }
+
+.clearfix {	@extend %clearfix; }
+
+.is-hidden { display: none !important; }
+.is-invisible { visibility: none !important; }
+.is-transparent { opacity: 0 !important; }
+
+.block { display: !important; }
+.inline { display: !important; }
+.inline-block { display: !important; }
+
+.left { float: left !important; }
+.right { float: right !important; }
+
+.text-left {text-align: left !important; }
+.text-center {text-align: center !important; }
+.text-right {text-align: right !important; }
+
+.container {
+	margin: 0 auto;
+	max-width: $max-width;
+	width: 100%;
+}
+
+html, body {
+	height: 100%;
+}
+
+body {
+	background-color: $body-color;
+	color: $text-color;
+}

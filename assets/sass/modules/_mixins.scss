@@ -1,0 +1,112 @@
+// Media query breakpoints
+// @include breakpoint(size, min or max, length property)
+@mixin breakpoint($point, $type: min, $point2: '', $type2: '' ) {
+	@if $point2 == '' and $type2 == '' {
+		@media ($type + -width: $point) {
+			@content;
+		}
+	} @else {
+		@media ($type + -width: $point) and ($type2 + -width: $point2) {
+			@content;
+		}
+	}
+}
+
+// Text highlight colors
+// @include text-highlight(background color, text color)
+@mixin text-highlight($background, $color) {
+	::selection {
+		background: $background;
+		color: $color;
+		line-height: 1em;
+		text-shadow: none; /* Safari */
+	}
+
+	::-moz-selection {
+		background: $background;
+		color: $color;
+		line-height: 1em;
+		text-shadow: none; /* Firefox */
+	}
+}
+
+@mixin create-columns {
+	@for $i from 1 through $number-of-columns {
+		.col-#{$i} {
+			width: grid-col-width($i);
+			// width: 100%;
+		}
+	}
+}
+
+// It is a way of targeting only certain classes in the grid system
+// Effectively creates something similar to this:
+// @for $i from 1 through $number-of-columns {
+// 	@if $i % 4 == 0{
+// 		[class$="#{$i}"] {
+// 			background-color: red;
+// 		}
+// 	}
+// }
+@mixin col-mod($n, $max) {
+	%mod-#{$n} {
+		@content;
+	}
+
+	$i: $n;
+
+	@while $i <= $max {
+		.col-#{$i} {
+			@extend %mod-#{$n}
+		}
+		$i: $i+$n;
+	}
+}
+
+
+
+// Animation mixin by Josh Broton
+// http://joshbroton.com/quick-fix-sass-mixins-for-css-keyframe-animations/
+// @include keyframes(move-the-object) {
+//   0%   { left: 100px; }
+//   100% { left: 200px; }
+// }
+
+// .object-to-animate {
+//   @include animation('move-the-object .5s 1', 'move-the-object-again .5s 1 .5s');
+// }
+@mixin animation($animate...) {
+	$max: length($animate);
+	$animations:'';
+
+	@for $i from 1 through $max {
+		$animations: #{$animations + nth($animate, $i)};
+
+		@if $i < $max {
+			$animations: #{$animations + ", "};
+		}
+	}
+
+	-webkit-animation: $animations;
+	-moz-animation:    $animations;
+	-o-animation:      $animations;
+	animation:         $animations;
+}
+
+@mixin keyframes($animationName) {
+	@-webkit-keyframes #{$animationName} {
+		@content;
+	}
+
+	@-moz-keyframes #{$animationName} {
+		@content;
+	}
+
+	@-o-keyframes #{$animationName} {
+		@content;
+	}
+
+	@keyframes #{$animationName} {
+		@content;
+	}
+}

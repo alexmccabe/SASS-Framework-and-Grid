@@ -1,0 +1,36 @@
+// Parent mixins
+@mixin flexbox() {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+
+	// @supports not (flex-wrap: wrap) {
+	// 	display: block;
+
+	// 	& > li {
+	// 		display: inline-block;
+	// 		vertical-align: top;
+	// 	}
+	// }
+}
+
+@mixin flex-align-items($align: flex-start) {
+	// flex-start | flex-end | center | baseline | stretch
+	-webkit-align-items: $align;
+	align-items: $align;
+}
+
+@mixin flex-flow($flex-flow: row wrap) {
+	// row | row-reverse | column | column-reverse
+	// nowrap | wrap | wrap-reverse
+	-webkit-flex-flow: $flex-flow;
+	flex-flow: $flex-flow;
+}
+
+@mixin flex-justify($justify: flex-start) {
+	// flex-start | flex-end | center | space-between | space-around
+	-webkit-justify-content: $justify;
+	justify-content: $justify;
+}

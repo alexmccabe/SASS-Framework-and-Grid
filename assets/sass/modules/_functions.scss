@@ -1,0 +1,28 @@
+// Converts the desired px value into em
+@function em($target: 0, $context: $font_size) {
+	@return ($target / $context) * 1em;
+}
+
+@function remove-unit($target) {
+	@return $target / ($target * 0 + 1);
+}
+
+// Get column width
+@function grid-col-width($col-span, $width: $max-width, $fixed: false){
+	$max-container-width: remove-unit($width);
+	$single-column: ($max-container-width / $number-of-columns);
+
+	@if $fixed == false {
+		@return percentage(($single-column / $max-container-width) * $col-span);
+	} @else {
+		@return $single-column * $col-span + px;
+	}
+}
+
+@function first($list) {
+  @return nth($list, 1);
+}
+
+@function last($list) {
+  @return nth($list, length($list));
+}

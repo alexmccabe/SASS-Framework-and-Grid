@@ -1,0 +1,37 @@
+@import "compass";
+
+// Import any external CSS here. E.g, Google Fonts
+// @import url(http://fonts.googleapis.com/css?family=Gafata);
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,300italic,400italic|Lato:100,400,400italic);
+
+// Document defaults
+$max-width: 960px; // Width without px
+$number-of-columns: 12;
+$gutter: 2rem;
+
+// Font weights
+$extra-light: 100;
+$light: 300;
+$regular: 400;
+$bold: 600;
+
+// Base font styles
+$base-font-family: 'Source Sans Pro', sans-serif;
+$base-font-weight: $light;
+$base-font-size: 16px;
+$base-line-height: 1.4;
+
+$heading-font-family: Lato;
+$heading-font-weight: $extra-light;
+
+$fixed-font-family: monospace;
+$fixed-font-size: 0.85em;
+$fixed-line-height: $base-line-height;
+
+$quote-font-family: $heading-font-family;
+$quote-line-height: $base-line-height + 0.3;
+
+// Default Compass overwrites
+$default-transition-duration : 0.8s;
+
+@import "modules/all";
