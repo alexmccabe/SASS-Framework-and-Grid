@@ -9,6 +9,12 @@ $max-width: 960px; // Width without px
 $number-of-columns: 12;
 $gutter: 2rem;
 
+// How will the grid behave?
+// adaptive (fixed width elements)
+// responsive (percentage width elements)
+// flexbox (using magic)
+$grid-mode: flexbox;
+
 // Font weights
 $extra-light: 100;
 $light: 300;

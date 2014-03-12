@@ -30,10 +30,16 @@
 	}
 }
 
-@mixin create-columns {
+// Floats or flexbox
+@mixin create-columns($type: float) {
 	@for $i from 1 through $number-of-columns {
 		.col-#{$i} {
-			width: grid-col-width($i);
+			@if $type == 'float' {
+				width: grid-col-width($i);
+			} @else if $type == 'flexbox' {
+				flex: $i;
+				width: grid-col-width($i, $max-width, true);
+			}
 			// width: 100%;
 		}
 	}

@@ -1,10 +1,10 @@
-// Converts the desired px value into em
-@function em($target: 0, $context: $font_size) {
-	@return ($target / $context) * 1em;
-}
-
 @function remove-unit($target) {
 	@return $target / ($target * 0 + 1);
+}
+
+// Converts the desired px value into em
+@function em($target: 0, $context: $font_size) {
+	@return (remove-unit($target) / $context) * 1em;
 }
 
 // Get column width

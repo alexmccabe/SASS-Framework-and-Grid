@@ -1,33 +1,8 @@
-@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,300italic,400italic|Lato:100,400,400italic);
-/* line 1, ../sass/modules/_utilities.scss */
-*, *:before, *:after {
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box; }
-
-/* line 14, ../sass/modules/_utilities.scss */
-.logo .icon-arrow-down {
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  transform: translateX(-50%); }
-
-/* line 28, ../sass/modules/_utilities.scss */
-.row:before, .clearfix:before, .row:after, .clearfix:after {
-  content: " ";
-  display: table; }
-/* line 33, ../sass/modules/_utilities.scss */
-.row:after, .clearfix:after {
-  clear: both; }
-/* line 37, ../sass/modules/_utilities.scss */
-.row, .clearfix {
-  *zoom: 1; }
-
 /**
  * html5doctor.com Reset Stylesheet v1.6.1 (http://html5doctor.com/html-5-reset-stylesheet/)
  * Richard Clark (http://richclarkdesign.com)
  * http://cssreset.com
  */
-/* line 17, ../sass/partials/_reset.scss */
 html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 abbr, address, cite, code,
@@ -46,416 +21,79 @@ time, mark, audio, video {
   outline: 0;
   font-size: 100%;
   vertical-align: baseline;
-  background: transparent; }
+  background: transparent;
+}
 
-/* line 26, ../sass/partials/_reset.scss */
 body {
-  line-height: 1; }
+  line-height: 1;
+}
 
-/* line 30, ../sass/partials/_reset.scss */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-  display: block; }
+  display: block;
+}
 
-/* line 33, ../sass/partials/_reset.scss */
 nav ul {
-  list-style: none; }
+  list-style: none;
+}
 
-/* line 36, ../sass/partials/_reset.scss */
 blockquote, q {
-  quotes: none; }
+  quotes: none;
+}
 
-/* line 40, ../sass/partials/_reset.scss */
 blockquote:before, blockquote:after,
 q:before, q:after {
   content: '';
-  content: none; }
+  content: none;
+}
 
-/* line 44, ../sass/partials/_reset.scss */
 a {
   margin: 0;
   padding: 0;
   font-size: 100%;
   vertical-align: baseline;
-  background: transparent; }
+  background: transparent;
+}
 
 /* change colours to suit your needs */
-/* line 52, ../sass/partials/_reset.scss */
 ins {
   background-color: #ff9;
   color: #000;
-  text-decoration: none; }
+  text-decoration: none;
+}
 
 /* change colours to suit your needs */
-/* line 58, ../sass/partials/_reset.scss */
 mark {
   background-color: #ff9;
   color: #000;
   font-style: italic;
-  font-weight: bold; }
+  font-weight: bold;
+}
 
-/* line 64, ../sass/partials/_reset.scss */
 del {
-  text-decoration: line-through; }
+  text-decoration: line-through;
+}
 
-/* line 67, ../sass/partials/_reset.scss */
 abbr[title], dfn[title] {
   border-bottom: 1px dotted;
-  cursor: help; }
+  cursor: help;
+}
 
-/* line 71, ../sass/partials/_reset.scss */
 table {
   border-collapse: collapse;
-  border-spacing: 0; }
+  border-spacing: 0;
+}
 
 /* change border colour to suit your needs */
-/* line 76, ../sass/partials/_reset.scss */
 hr {
   display: block;
   height: 1px;
   border: 0;
   border-top: 1px solid #cccccc;
   margin: 1em 0;
-  padding: 0; }
+  padding: 0;
+}
 
-/* line 84, ../sass/partials/_reset.scss */
 input, select {
-  vertical-align: middle; }
-
-@font-face {
-  font-family: 'icomoon';
-  src: url("../fonts/icomoon/icomoon.eot?igptjk");
-  src: url("../fonts/icomoon/icomoon.eot?#iefixigptjk") format("embedded-opentype"), url("../fonts/icomoon/icomoon.woff?igptjk") format("woff"), url("../fonts/icomoon/icomoon.ttf?igptjk") format("truetype"), url("../fonts/icomoon/icomoon.svg?igptjk#icomoon") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-
-/* line 12, ../sass/partials/_fonts.scss */
-[class^="icon-"], [class*=" icon-"] {
-  font-family: 'icomoon';
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
-
-/* line 26, ../sass/partials/_fonts.scss */
-.icon-arrow-down:before {
-  content: "\e600"; }
-
-/* line 1, ../sass/partials/_grids.scss */
-.row {
-  margin: -1rem 0; }
-
-/* line 9, ../sass/partials/_grids.scss */
-[class^="col-"], [class*=" col-"] {
-  float: left;
-  min-height: 1px;
-  padding: 1rem;
-  width: 100%; }
-
-/* line 35, ../sass/modules/_mixins.scss */
-.col-1 {
-  width: 8.33333%; }
-
-/* line 35, ../sass/modules/_mixins.scss */
-.col-2 {
-  width: 16.66667%; }
-
-/* line 35, ../sass/modules/_mixins.scss */
-.col-3 {
-  width: 25%; }
-
-/* line 35, ../sass/modules/_mixins.scss */
-.col-4 {
-  width: 33.33333%; }
-
-/* line 35, ../sass/modules/_mixins.scss */
-.col-5 {
-  width: 41.66667%; }
-
-/* line 35, ../sass/modules/_mixins.scss */
-.col-6 {
-  width: 50%; }
-
-/* line 35, ../sass/modules/_mixins.scss */
-.col-7 {
-  width: 58.33333%; }
-
-/* line 35, ../sass/modules/_mixins.scss */
-.col-8 {
-  width: 66.66667%; }
-
-/* line 35, ../sass/modules/_mixins.scss */
-.col-9 {
-  width: 75%; }
-
-/* line 35, ../sass/modules/_mixins.scss */
-.col-10 {
-  width: 83.33333%; }
-
-/* line 35, ../sass/modules/_mixins.scss */
-.col-11 {
-  width: 91.66667%; }
-
-/* line 35, ../sass/modules/_mixins.scss */
-.col-12 {
-  width: 100%; }
-
-/* line 20, ../sass/partials/_grids.scss */
-.col-center {
-  float: none;
-  margin: auto; }
-
-@media (max-width: 500px) {
-  /* line 28, ../sass/partials/_grids.scss */
-  [class^="col-"], [class*=" col-"] {
-    width: 100%; } }
-@media (min-width: 501px) and (max-width: 768px) {
-  /* line 34, ../sass/partials/_grids.scss */
-  .col-1 {
-    width: 25%; }
-
-  /* line 38, ../sass/partials/_grids.scss */
-  .col-2 {
-    width: 33.3333%; }
-
-  /* line 52, ../sass/modules/_mixins.scss */
-  .col-3, .col-6, .col-9 {
-    width: 50%; }
-
-  /* line 52, ../sass/modules/_mixins.scss */
-  .col-4, .col-8 {
-    width: 100%; }
-
-  /* line 54, ../sass/partials/_grids.scss */
-  .col-5, .col-7 {
-    width: 50%; }
-
-  /* line 58, ../sass/partials/_grids.scss */
-  .col-5 + .col-2 {
-    width: 100%; }
-
-  /* line 62, ../sass/partials/_grids.scss */
-  .col-10, .col-11 {
-    width: 100%; }
-    /* line 65, ../sass/partials/_grids.scss */
-    .col-10 + .col-2, .col-10 + .col-1, .col-11 + .col-2, .col-11 + .col-1 {
-      width: 100%; } }
-/* line 71, ../sass/partials/_grids.scss */
-.col_12 {
-  width: 100%; }
-
-/* line 76, ../sass/partials/_grids.scss */
-.grid {
-  margin-bottom: 2em;
-  text-align: center; }
-  /* line 80, ../sass/partials/_grids.scss */
-  .grid .row {
-    margin: 0.5em; }
-    /* line 83, ../sass/partials/_grids.scss */
-    .grid .row [class^="col-"], .grid .row [class*=" col-"] {
-      background-color: #edf3fd;
-      border: 2px solid #92b4f2; }
-
-/* line 1, ../sass/partials/_typography.scss */
-body {
-  color: black;
-  font-family: "Source Sans Pro", sans-serif;
-  font-size: 16px;
-  font-weight: 300;
-  line-height: 1.4; }
-
-/* line 10, ../sass/partials/_typography.scss */
-a:link, a:visited {
-  text-decoration: none; }
-
-/* line 15, ../sass/partials/_typography.scss */
-.h1, .typography h1, .typography .h1, .h2, .typography h2, .typography .h2, .h3, .typography h3, .typography .h3, .h4, .typography h4, .typography .h4, .h5, .typography h5, .typography .h5, .h6, .typography h6, .typography .h6 {
-  font-family: Lato;
-  font-weight: 100; }
-
-/* line 20, ../sass/partials/_typography.scss */
-.h1, .typography h1, .typography .h1, .h2, .typography h2, .typography .h2 {
-  line-height: 1.1; }
-
-/* line 21, ../sass/partials/_typography.scss */
-.h3, .typography h3, .typography .h3, .h4, .typography h4, .typography .h4 {
-  line-height: 1.3; }
-
-/* line 23, ../sass/partials/_typography.scss */
-.h1, .typography h1, .typography .h1 {
-  font-size: 4em;
-  letter-spacing: -2px; }
-
-/* line 24, ../sass/partials/_typography.scss */
-.h2, .typography h2, .typography .h2 {
-  font-size: 2.5em;
-  letter-spacing: -1px; }
-
-/* line 25, ../sass/partials/_typography.scss */
-.h3, .typography h3, .typography .h3 {
-  font-size: 2em; }
-
-/* line 26, ../sass/partials/_typography.scss */
-.h4, .typography h4, .typography .h4 {
-  font-size: 1.8em; }
-
-/* line 27, ../sass/partials/_typography.scss */
-.h5, .typography h5, .typography .h5 {
-  font-size: 1.3em; }
-
-/* line 28, ../sass/partials/_typography.scss */
-.h6, .typography h6, .typography .h6 {
-  font-size: 1em; }
-
-/* line 30, ../sass/partials/_typography.scss */
-.typography h1, .typography .h1, .typography h2, .typography .h2, .typography h3, .typography .h3, .typography h4, .typography .h4, .typography h5, .typography .h5, .typography h6, .typography .h6 {
-  margin: 1em 0 0 0.5em; }
-
-/* line 32, ../sass/partials/_typography.scss */
-.fixed, .typography pre, .typography code {
-  font-family: monospace;
-  font-size: 0.85em;
-  line-height: 1.4; }
-
-/* line 38, ../sass/partials/_typography.scss */
-.bold, .typography b, .typography strong {
-  font-weight: 600; }
-
-/* line 39, ../sass/partials/_typography.scss */
-.italic, .block-quote, .typography i, .typography em {
-  font-style: italic; }
-
-/* line 41, ../sass/partials/_typography.scss */
-.ul {
-  list-style-type: disc; }
-
-/* line 42, ../sass/partials/_typography.scss */
-.ol {
-  list-style-type: decimal; }
-
-/* line 44, ../sass/partials/_typography.scss */
-.block-margins, .typography p, .typography pre, .typography ul, .typography ol {
-  margin: 1em 0; }
-
-/* line 45, ../sass/partials/_typography.scss */
-.block-quote {
-  font-family: Lato;
-  font-size: 1.5em;
-  line-height: 1.7;
-  margin: 2em 0; }
-
-/* line 5, ../sass/partials/_globals.scss */
-.is-hidden {
-  display: none !important; }
-
-/* line 6, ../sass/partials/_globals.scss */
-.is-invisible {
-  visibility: none !important; }
-
-/* line 7, ../sass/partials/_globals.scss */
-.is-transparent {
-  opacity: 0 !important; }
-
-/* line 9, ../sass/partials/_globals.scss */
-.block {
-  display: !important; }
-
-/* line 10, ../sass/partials/_globals.scss */
-.inline {
-  display: !important; }
-
-/* line 11, ../sass/partials/_globals.scss */
-.inline-block {
-  display: !important; }
-
-/* line 13, ../sass/partials/_globals.scss */
-.left {
-  float: left !important; }
-
-/* line 14, ../sass/partials/_globals.scss */
-.right {
-  float: right !important; }
-
-/* line 16, ../sass/partials/_globals.scss */
-.text-left {
-  text-align: left !important; }
-
-/* line 17, ../sass/partials/_globals.scss */
-.text-center {
-  text-align: center !important; }
-
-/* line 18, ../sass/partials/_globals.scss */
-.text-right {
-  text-align: right !important; }
-
-/* line 20, ../sass/partials/_globals.scss */
-.container {
-  margin: 0 auto;
-  max-width: 960px;
-  width: 100%; }
-
-/* line 26, ../sass/partials/_globals.scss */
-html, body {
-  height: 100%; }
-
-/* line 30, ../sass/partials/_globals.scss */
-body {
-  background-color: white;
-  color: black; }
-
-/* line 3, ../sass/partials/_sections.scss */
-.homepage-section {
-  padding: 5em 0; }
-
-/* line 7, ../sass/partials/_sections.scss */
-.logo {
-  background-color: #22303e;
-  min-height: 100%;
-  margin: 0;
-  padding: 5em;
-  position: relative;
-  width: 100%;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-align-items: center;
-  align-items: center;
-  -webkit-flex-flow: column wrap;
-  flex-flow: column wrap;
-  -webkit-justify-content: center;
-  justify-content: center; }
-  /* line 21, ../sass/partials/_sections.scss */
-  .logo .svg_container {
-    margin: 0 auto;
-    position: relative;
-    width: 70%; }
-  /* line 27, ../sass/partials/_sections.scss */
-  .logo .icon-arrow-down {
-    bottom: 0.5em;
-    color: red;
-    display: block;
-    left: 50%;
-    position: absolute;
-    font-size: 4.5em;
-    z-index: 200; }
-    /* line 38, ../sass/partials/_sections.scss */
-    .logo .icon-arrow-down:before {
-      border: 2px solid green;
-      border-radius: 100%;
-      padding-left: 4px;
-      padding-top: 5px;
-      -webkit-transition: all 0.8s;
-      -moz-transition: all 0.8s;
-      -o-transition: all 0.8s;
-      transition: all 0.8s; }
-    /* line 47, ../sass/partials/_sections.scss */
-    .logo .icon-arrow-down:hover:before {
-      padding: 20px 14px 15px 18px;
-      border: 2px solid rgba(0, 128, 0, 0); }
+  vertical-align: middle;
+}

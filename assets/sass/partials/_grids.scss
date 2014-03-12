@@ -1,19 +1,18 @@
 .row {
 	@extend %clearfix;
-
 	margin: ($gutter / -2) 0;
 	// margin-left:  ($gutter / -2);
 	// margin-right: ($gutter / -2);
 }
 
 [class^="col-"], [class*=" col-"] {
-	float: left;
 	min-height: 1px;
 	padding: ($gutter / 2);
-	width: 100%;
+	float: left;
+		width: 100%;
 }
 
-@include create-columns();
+@include create-columns(float);
 
 // Add this class to the column that you want to be centered
 // on the page
@@ -71,6 +70,22 @@
 .col_12 {
 	width: 100%;
 }
+
+// @include create-columns(float);
+// .flexbox {
+// 	float: none;
+
+// 	@include flexbox;
+// 	@include flex-flow(column wrap);
+
+// 	[class^="col-"], [class*=" col-"] {
+// 		float: none;
+// 		flex: 1;
+// 		width: auto;
+// 	}
+
+// 	@include create-columns(flexbox);
+// }
 
 // For grid viewing purposes
 .grid {
