@@ -7,7 +7,8 @@
 .Trashes
 ehthumbs.db
 Thumbs.db
-.sublime-project
-.sublime-workspace
-.gulpfile.js
-node_modules
+*.sublime-project
+*.sublime-workspace
+gulpfile.js
+node_modules/
+.sass-cache/
